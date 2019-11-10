@@ -4,7 +4,6 @@ class PeopleController < ApplicationController
     @person.addresses.build(address_type: 'work')
     @person.addresses.build(address_type: 'home')
   end
-  end
 
   def create    
     person = Person.create(person_params)
